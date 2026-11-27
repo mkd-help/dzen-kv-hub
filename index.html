@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ДЗЕН-КВАРТАЛЫ — Сервисы для жителей</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;background:#2a2420;color:#fff;min-height:100vh;padding:16px;line-height:1.5}
+.container{max-width:640px;margin:0 auto}
+.header{text-align:center;margin-bottom:30px;padding-top:20px}
+.header h1{font-size:clamp(24px,6vw,32px);font-weight:700;margin-bottom:8px}
+.header p{font-size:14px;color:#b0a8a0;line-height:1.5}
+.services{display:grid;grid-template-columns:1fr;gap:20px;margin-bottom:30px}
+.service-card{background:#1e1a16;border-radius:16px;padding:30px 24px;text-align:center;transition:all .2s;cursor:pointer;text-decoration:none;color:inherit;display:block;border:2px solid transparent}
+.service-card:hover{border-color:#ff9800;transform:translateY(-2px)}
+.service-card:active{background:#252018}
+.service-icon{font-size:56px;margin-bottom:16px;display:block}
+.service-title{font-size:20px;font-weight:700;margin-bottom:10px;color:#fff}
+.service-desc{font-size:14px;color:#b0a8a0;line-height:1.5;margin-bottom:20px}
+.service-btn{display:inline-block;background:#ff9800;color:#1a1410;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:background .15s}
+.service-btn:hover{background:#ffb74d}
+.footer{margin-top:20px;padding:16px;text-align:center;font-size:12px;color:#888;line-height:1.6}
+.footer a{color:#ff9800;text-decoration:none}
+.copyright{margin-top:10px;font-size:11px;color:#666}
+@media(max-width:480px){
+  body{padding:10px}
+  .service-card{padding:24px 18px}
+  .service-icon{font-size:48px}
+}
+</style>
+</head>
+<body>
+<div class="container">
 
+  <div class="header">
+    <h1>🏠 ДЗЕН-КВАРТАЛЫ</h1>
+    <p>Сервисы для жителей дома<br>г. Москва, р-н Коммунарка, квартал № 160, 1Вк4</p>
+  </div>
+
+  <div class="services">
+
+    <a href="https://mkd-help.github.io/meters-dzen-kv/?clckid=e27e2e8d" class="service-card">
+      <span class="service-icon">📊</span>
+      <div class="service-title">Показания счётчиков</div>
+      <div class="service-desc">Введите показания — получите готовые письма для отправки в УК. Данные никуда не сохраняются.</div>
+      <span class="service-btn">Перейти →</span>
+    </a>
+
+    <a href="https://mkd-help.github.io/dzen-kv-form/" class="service-card">
+      <span class="service-icon">📋</span>
+      <div class="service-title">Заявки и обращения</div>
+      <div class="service-desc">Выберите проблему — получите готовый текст обращения в УК, ГЖИ или Управу с ссылками на законы.</div>
+      <span class="service-btn">Перейти →</span>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    <p>Оба сервиса бесплатные, без регистрации и рекламы.</p>
+    <p style="margin-top:6px">Данные не сохраняются и не передаются третьим лицам.</p>
+    <p style="margin-top:6px;color:#ff6b6b">При пожаре или угрозе обрушения — звоните <a href="tel:112">112</a>.</p>
+    <p class="copyright">© 2026 CYV. Все права защищены.</p>
+  </div>
+
+</div>
+</body>
+</html>
